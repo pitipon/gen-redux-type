@@ -96,16 +96,6 @@ const genReduxType = ({
     let newEvents = arrUpperCase(events);
     let newExtras = arrUpperCase(extras);
 
-    console.log(verbs)
-    console.log(events)
-    console.log(extras)
-
-    console.log(newName)
-    console.log(newVerbs)
-    console.log(newEvents)
-    console.log(newExtras)
-
-
     // Execute types and actions
     const types = typeGen({ name: newName, verbs: newVerbs, events: newEvents, extras: newExtras});
     const actions = actionGen(types);
